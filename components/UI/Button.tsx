@@ -4,7 +4,7 @@ interface Button {
   wide: boolean;
 }
 
-export const Button: React.FC<Button> = ({ children, wide }) => {
+export const Button: React.FC<Button> = ({ wide }, children: any) => {
   if (wide === false) {
     return (
       <button className="hover:bg-black/10 flex items-center justify-center p-2 rounded-normal">
