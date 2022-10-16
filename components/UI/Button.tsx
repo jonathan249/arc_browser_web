@@ -8,14 +8,14 @@ export const Button: React.FC<Button> = ({ wide }, children: any) => {
   if (wide === false) {
     return (
       <button className="hover:bg-black/10 flex items-center justify-center p-2 rounded-normal">
-        {children}
+        <div>{children}</div>
       </button>
     );
   }
 
   return (
     <button className="bg-black/10 flex items-center justify-center py-3 px-4 rounded-normal hover:bg-black/25">
-      {children}
+      <div>{children}</div>
     </button>
   );
 };
